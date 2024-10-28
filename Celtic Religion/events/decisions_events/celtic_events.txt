@@ -1,0 +1,226 @@
+﻿namespace = celtic_isles
+
+celtic_isles.2201 = {
+	type = character_event
+	title = celtic_isles.2201.t
+	desc = celtic_isles.2201.desc
+	theme = realm
+	left_portrait = {
+		character = scope:celtic_reclaimer
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = celtic_reclaimer
+		reclaim_celtic_religion_decision_effect = yes
+	}
+
+	option = {
+		name = celtic_isles.2201.a
+	}
+}
+
+# Players informed
+celtic_isles.2202 = {
+	type = character_event
+	title = celtic_isles.2201.t
+	desc = celtic_isles.2202.desc
+	theme = realm
+	left_portrait = {
+		character = scope:celtic_reclaimer
+		animation = personality_honorable
+	}
+
+	option = { # Not celtic
+		name = celtic_isles.2202.a
+		trigger = {
+			NOR = {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				religion = religion:celtic_religion
+			}
+		}
+	}
+	option = { # Also celtic
+		name = celtic_isles.2202.b
+		trigger = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				religion = religion:celtic_religion
+			}
+		}
+	}
+}
+
+
+celtic_isles.2301 = {
+	type = character_event
+	title = celtic_isles.2301.t
+	desc = celtic_isles.2301.desc
+	theme = realm
+	left_portrait = {
+		character = scope:gaul_celtic_reclaimer
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = gaul_celtic_reclaimer
+		reclaim_gaul_celtic_religion_decision_effect = yes
+	}
+
+	option = {
+		name = celtic_isles.2301.a
+	}
+}
+
+# Players informed
+celtic_isles.2302 = {
+	type = character_event
+	title = celtic_isles.2301.t
+	desc = celtic_isles.2302.desc
+	theme = realm
+	left_portrait = {
+		character = scope:gaul_celtic_reclaimer
+		animation = personality_honorable
+	}
+
+	option = { # Not celtic
+		name = celtic_isles.2302.a
+		trigger = {
+			NOR = {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				religion = religion:celtic_religion
+			}
+		}
+	}
+	option = { # Also celtic
+		name = celtic_isles.2302.b
+		trigger = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				religion = religion:celtic_religion
+			}
+		}
+	}
+}
+
+celtic_isles.3001{
+	type = character_event
+	title = celtic_isles.3001.t
+	desc = celtic_isles.3001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		#Apply decision effects.
+		found_gaul_decision_scripted_effect = yes
+	}
+
+	#I'm the besterest!
+	option = {
+		name = celtic_isles.3001.a
+
+		add_prestige_experience = 1000
+
+		ai_chance = {
+			#Only option.
+			base = 100
+		}
+	}
+}
+
+celtic_isles.3002{
+	type = character_event
+	title = celtic_isles.3002.t
+	desc = celtic_isles.3002.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		show_as_tooltip = { found_gaul_decision_scripted_effect = yes }
+	}
+
+	#Huzzah!
+	option = {
+		name = celtic_isles.3002.a
+
+		ai_chance = {
+			#Doesn't especially matter.
+			base = 100
+		}
+	}
+
+	#This bodes ill...
+	option = {
+		name = celtic_isles.3002.b
+
+		ai_chance = {
+			#Doesn't especially matter.
+			base = 100
+		}
+	}
+}
+
+celtic_isles.3003{
+	type = character_event
+	title = celtic_isles.3003.t
+	desc = celtic_isles.3003.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		show_as_tooltip = { found_gaul_decision_scripted_effect = yes }
+	}
+
+	#We're the best!
+	option = {
+		name = celtic_isles.3003.a
+		trigger = { faith = scope:founder.faith }
+
+		ai_chance = {
+			#Doesn't especially matter.
+			base = 100
+		}
+	}
+
+	#Foul Heathens/Christmen!
+	option = {
+		name = celtic_isles.3003.b
+		trigger = {
+			NOT = { faith = scope:founder.faith }
+		}
+
+		ai_chance = {
+			#Doesn't especially matter.
+			base = 100
+		}
+	}
+
+	#Emperors get antsy.
+	option = {
+		name = celtic_isles.3003.c
+		trigger = { highest_held_title_tier >= tier_empire }
+
+		ai_chance = {
+			#Doesn't especially matter.
+			base = 100
+		}
+	}
+}

@@ -1,0 +1,140 @@
+﻿l_english:
+ celtic_religion:0 "Celtic"
+ celtic_religion_adj:0 "Celtic"
+ celtic_religion_adherent:0 "Celt"
+ celtic_religion_adherent_plural:0 "Celts"
+ celtic_religion_desc:0 "Defined by a reverence for nature, and a belief in fey, these people strive to create a balance between nature and man."
+ 
+ irish_celtic:0 "Insular Celtic"
+ irish_celtic_adj:0 "Celtic"
+ irish_celtic_adherent:0 "Celt"
+ irish_celtic_adherent_plural:0 "Celts"
+ irish_celtic_religion_desc:0 "Defined by a reverence for nature, and a belief in fey, these people strive to create a balance between nature and man."
+
+ gaul_celtic:0 "Gaulish Celtic"
+ gaul_celtic_adj:0 "Celtic"
+ gaul_celtic_adherent:0 "Celt"
+ gaul_celtic_adherent_plural:0 "Celts"
+ gaul_celtic_religion_desc:0 "Defined by a reverence for nature, and a belief in fey, these people strive to create a balance between nature and man."
+ 
+ celtic_religion_old:0 "Celtic"
+ celtic_religion_old_adj:0 "Celtic"
+ celtic_religion_old_adherent:0 "Celt"
+ celtic_religion_old_adherent_plural:0 "Celts"
+ celtic_religion_old_desc:0 "Defined by a reverence for nature, and a belief in fey, these people strive to create a balance between nature and man."
+ 
+ irish_celtic_old:0 "Insular Celtic"
+ irish_celtic_old_adj:0 "Celtic"
+ irish_celtic_old_adherent:0 "Celt"
+ irish_celtic_old_adherent_plural:0 "Celts"
+ irish_celtic_old_religion_desc:0 "Defined by a reverence for nature, and a belief in fey, these people strive to create a balance between nature and man."
+
+ gaul_celtic_old:0 "Gaulish Celtic"
+ gaul_celtic_old_adj:0 "Celtic"
+ gaul_celtic_old_adherent:0 "Celt"
+ gaul_celtic_old_adherent_plural:0 "Celts"
+ gaul_celtic_old_religion_desc:0 "Defined by a reverence for nature, and a belief in fey, these people strive to create a balance between nature and man."
+
+ holy_order_druidic_circle:0 "Druidic Knights of the Celtic Cirlce"
+ holy_order_guardians_of_tuath_de:0 "Guardians of Tuath De" 
+ holy_order_faithful_of_morrigan:0 "Faithful to Morrigan"
+ holy_order_warriors_of_the_triquetra:0 " Warriors of the Triquetra"
+
+ reclaim_celtic_religion_decision:0 "Reistablish Celtic Paganism"
+ reclaim_celtic_religion_decision_desc:1 "These lands were once ruled by Celts, and the significance and influence of the religion is once again spreading throughout the lands. As more men and women embrace the Celtic belifs, it is only right to make it official!"
+ reclaim_celtic_religion_decision_tooltip:0 "[ROOT.Char.GetFaith.GetName] faith will rule"
+ reclaim_celtic_religion_decision_custom:0 "Cannot have more than 1 vassal with non-Celtic Religion"
+ reclaim_celtic_religion_decision_confirm:1 "Reistablish Celtic Paganism"
+ HAS_NON_CELTIC_RELIGION_POWERFUL_VASSAL:2 "All of your [powerful_vassals|E] are a Celtic [faith|E]"
+ 
+ reclaim_gaul_celtic_religion_decision:0 "Reistablish Celtic Paganism"
+ reclaim_gaul_celtic_religion_decision_desc:1 "These lands were once ruled by Celts, and the significance and influence of the religion is once again spreading throughout the lands. As more men and women embrace the Celtic belifs, it is only right to make it official!"
+ reclaim_gaul_celtic_religion_decision_tooltip:0 "[ROOT.Char.GetFaith.GetName] faith will rule"
+ reclaim_gaul_celtic_religion_decision_custom:0 "Cannot have more than 1 vassal with non-Celtic Religion"
+ reclaim_gaul_celtic_religion_decision_confirm:1 "Reistablish Celtic Paganism"
+ 
+ nick_the_druwid:0 " the Druwid"
+ 
+ celtic_isles.2201.t:0 "[celtic_reclaimer.GetFaith.GetNameNoTooltip|U] Britannia"
+ celtic_isles.2201.desc:0 "For too long this great island of ours has been under a foreign god — at last it is back in Celtic hands! I look out over the fields, and it is as if the sun shines for the first time in years; it is as if the land of abundance and health, Tír na nÓg, has returned to greet us welcome. The hills and valleys of our ancestors are once again embraced by the [ROOT.Char.GetFaith] faith."
+ celtic_isles.2201.custom:0 "All [counties|E] in Britannia"
+ celtic_isles.2201.a:0 "Praised be the ancestors!"
+
+ celtic_isles.2202.desc:0 "The [ROOT.Char.Custom2('RelationDescriptor', SCOPE.sC('reclaimer'))] [reclaimer.GetName] has officially announced the rebirth of the Celtic religion. \n\nAfter centuries of foreign gods brought by invaders, the Isles have returned under the control of their original owners."
+ celtic_isles.2202.a:0 "A [celtic_reclaimer.GetFaith.GetNameNoTooltip] scourge upon the lands..."
+ celtic_isles.2202.b:0 "Britannia is ours once again!"
+ 
+ 
+ celtic_isles.2301.t:0 "[celtic_reclaimer.GetFaith.GetNameNoTooltip|U] Gaul"
+ celtic_isles.2301.desc:0 "For too long this great land of ours has been under a foreign god — at last it is back in Celtic hands! I look out over the fields, and it is as if the sun shines for the first time in years; it is as if the land of abundance and health, Tír na nÓg, has returned to greet us welcome. The hills and valleys of our ancestors are once again embraced by the [ROOT.Char.GetFaith] faith."
+ celtic_isles.2301.custom:0 "All [counties|E] in Gaul"
+ celtic_isles.2301.a:0 "Praised be the ancestors!"
+
+ celtic_isles.2302.desc:0 "The [ROOT.Char.Custom2('RelationDescriptor', SCOPE.sC('reclaimer'))] [reclaimer.GetName] has officially announced the rebirth of the Celtic religion. \n\nAfter centuries of foreign gods brought by invaders, Gaul has returned under the control of their original owners."
+ celtic_isles.2302.a:0 "A [celtic_reclaimer.GetFaith.GetNameNoTooltip] scourge upon the lands..."
+ celtic_isles.2302.b:0 "Gaul is ours once again!"
+
+ holy_site_thanes_name:0 "Thanes Estuary"
+ holy_site_thanes_effect_name:0 "From [holy_site|E] #weak ($holy_site_thanes_name$)#!"
+ holy_site_thanes_effects:0 "County Conversion Speed: #P +20%#!"
+ holy_site_wiltshire_name:0 "Stonehenge"
+ holy_site_wiltshire_effect_name:0 "From [holy_site|E] #weak ($holy_site_wiltshire_name$)#!"
+ holy_site_anglesey_name:0 "Isles Mona"
+ holy_site_anglesey_effect_name:0 "From [holy_site|E] #weak ($holy_site_anglesey_name$)#!"
+ holy_site_dublin_name:0 "Hill of Tara"
+ holy_site_dublin_effect_name:0 "From [holy_site|E] #weak ($holy_site_dublin_name$)#!"
+ holy_site_hebrides_name:0 "Glen of Faires"
+ holy_site_hebrides_effect_name:0 "From [holy_site|E] #weak ($holy_site_hebrides_name$)#!"
+ 
+ holy_site_brie_name:0 "Seine Druidic Clearing"
+ holy_site_brie_effect_name:0 "From [holy_site|E] #weak ($holy_site_brie_name$)#!"
+ holy_site_tiel_name:0 "Star Stones"
+ holy_site_tiel_effect_name:0 "From [holy_site|E] #weak ($holy_site_tiel_name$)#!"
+ holy_site_huy_name:0 "Pierre Haina"
+ holy_site_huy_effect_name:0 "From [holy_site|E] #weak ($holy_site_huy_name$)#!"
+ holy_site_vannes_name:0 "Carnac Stones"
+ holy_site_vannes_effect_name:0 "From [holy_site|E] #weak ($holy_site_vannes_name$)#!"
+ holy_site_macon_name:0 "Sky Temple"
+ holy_site_macon_effect_name:0 "From [holy_site|E] #weak ($holy_site_macon_name$)#!"
+ holy_site_macon_effects:0 "County Conversion Speed: #P +20%#!"
+ 
+ reclaim_celtic_religion_modifier:0 "Reclaimed Celtic Religion"
+ reclaim_celtic_religion_modifier_desc:1 "[promote_faith|E] ($celtic$ faith only) Speed: #P +75%#!"
+
+ reclaim_gaul_celtic_religion_modifier:0 "Reclaimed Celtic Religion"
+ reclaim_gaul_celtic_religion_modifier_desc:1 "[promote_faith|E] ($celtic$ faith only) Speed: #P +75%#!" 
+
+ COURT_CHAPLAIN_CONVERSION_HOLY_SITE_THANES:1 "Holy Site — Thanes Estuary"
+ COURT_CHAPLAIN_CONVERSION_HOLY_SITE_MACON:1 "Holy Site — Seine Druidic Clearing"
+ COURT_CHAPLAIN_CONVERSION_RECLAIMING_CELTIC:0 "Reclaim Celtic Paganism"
+ COURT_CHAPLAIN_CONVERSION_RECLAIMING_GAUL_CELTIC:0 "Reclaim Celtic Paganism"
+ 
+ custom_gaul:0 "Gaul"
+ 
+ found_gaul_decision:0 "Found the Empire of Gaul"
+ found_gaul_decision_desc:0 "The old celtic tribes of Gaul once ruled this land. It is time for them to be united again as one people. The kingdoms of $k_france$, $k_brittany$, $k_frisia$, and $k_lotharingia$ will form this ancient and new empire."
+ found_gaul_decision_tooltip:1 "Bind $k_france$, $k_brittany$, $k_frisia$, and $k_lotharingia$ into one [de_jure|E] [realm|E]"
+ found_gaul_decision_confirm:0 "Gaul has awaken!"
+ 
+ e_occitania_article:0 "the "
+ e_occitania:0 "Occitania Empire"
+ e_occitania_adj:0 "Occitan"
+ 
+ e_gaul_article:0 ""
+ e_gaul:0 "Gaul"
+ e_gaul_adj:0 "Gallic"
+ 
+ celtic_isles.3001.t:0 "The High [founder.Custom('GetQueenKing')] of the Gaul"
+ celtic_isles.3001.desc:0 "It has long been my ambition to unite the old lands of the great Gaul tribes beneath a single, permanent banner. For years I have toiled, winning recognition as a great ruler of each of my realms in turn, and today I make good on my dream.\n\nAfter carefully-worded oaths of unceasing fealty from key vassals, the Celtic people have acknowledged my office as High [founder.Custom('GetQueenKing')], the new steward of Gaul."
+ celtic_isles.3001.a:0 "A lasting, mighty realm!"
+ 
+ celtic_isles.3002.t:0 "$fp1_major_decisions.0001.t$"
+ celtic_isles.3002.desc:0 "For many years, my liege, [founder.Custom('GetQueenKing')] [founder.GetFirstName], has made it clear that [founder.GetSheHe] wishes [founder.GetHerHis] realm to survive [founder.GetHerHim].\n\nThough our kingdoms are bound together by ties of kinship and conflict, the sheer distance and differences between them has made this goal seem unattainable.\n\nToday, these doubts were proved unfounded, with [founder.GetFirstNameNoTooltip] distributing years of written oaths of mutually-binding fealty between all vassals of the realm.\n\nThe $title_high_kingdom$ of the $e_north_sea$ is born!"
+ celtic_isles.3002.a:0 "Hail the [founder.GetTitleAsNameNoTooltip]!"
+ celtic_isles.3002.b:0 "A false [founder.Custom('GetQueenKing')], four times over."
+
+ celtic_isles.3003.t:0 "$celtic_isles.3001.t$"
+ celtic_isles.3003.desc:0 "Long has it been the open ambition of [founder.GetFirstName], [founder.Custom('GetQueenKing')] of $k_norway$, $k_england$, and $k_denmark$, to ensure that [founder.GetHerHis] realm does not shatter on [founder.GetHerHis] death.\n\nToday, after long years of rule and tense negotiation, [founder.GetSheHe] finally got [founder.GetHerHis] wish.\n\nThe vassals of the three kingdoms have agreed that, no matter who sits on the throne of each, all will bow toward the [founder.GetTitleAsNameNoTooltip]."
+ celtic_isles.3003.a:0 "A realm for all good [ROOT.GetCharacter.GetFaith.GetNameNoTooltip]!"
+ celtic_isles.3003.b:0 "Protect us, oh [ROOT.GetCharacter.GetFaith.HighGodName], from the wrath of [founder.GetFirstNameNoTooltip]!"
+ celtic_isles.3003.c:0 "[founder.GetSheHe|U]'s nothing but a pretentious barbarian!"

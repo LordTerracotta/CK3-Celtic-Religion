@@ -1,0 +1,3 @@
+﻿e_gaul = {
+	coat_of_arms = e_gaul
+}

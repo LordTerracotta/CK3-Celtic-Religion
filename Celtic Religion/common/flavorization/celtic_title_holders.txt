@@ -1,0 +1,10 @@
+﻿title_high_king = {
+	type = character
+	tier = empire
+	gender = male
+	special = holder
+	priority = 102
+	titles = { 	e_north_sea 
+				e_gaul
+	}
+}

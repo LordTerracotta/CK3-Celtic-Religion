@@ -1,0 +1,98 @@
+﻿dublin = {
+	county = c_dublin
+
+	character_modifier = {
+		name = holy_site_dublin_effect_name
+		religious_vassal_opinion = 10
+	}
+}
+
+anglesey = {
+	county = c_anglesey
+
+	character_modifier = {
+		name = holy_site_anglesey_effect_name
+		cultural_head_fascination_mult = 0.05
+		development_growth_factor = 0.1
+	}
+}
+
+wiltshire = {
+	county = c_wiltshire
+
+	character_modifier = {
+		name = holy_site_wiltshire_effect_name
+		learning_per_piety_level = 1
+	}
+}
+
+hebrides = {
+	county = c_outer_hebrides
+
+	character_modifier = {
+		name = holy_site_hebrides_effect_name
+		monthly_county_control_change_factor = 0.05
+		monthly_piety_gain_mult = 0.1
+	}
+}
+
+thanes = {
+	county = c_kent
+	barony = b_rochester
+
+	character_modifier = {
+		name = holy_site_thanes_effect_name
+		forest_advantage = 5
+	}
+	flag = thanes_conversion_bonus # +20% County Conversion
+}
+
+brie = {
+	county = c_brie_francaise
+
+	character_modifier = {
+		name = holy_site_brie_effect_name
+		religious_vassal_opinion = 10
+	}
+}
+
+tiel = {
+	county = c_guelders
+	barony = b_tiel
+
+	character_modifier = {
+		name = holy_site_tiel_effect_name
+		cultural_head_fascination_mult = 0.05
+		development_growth_factor = 0.1
+	}
+}
+
+huy = {
+	county = c_liege
+	barony = b_huy
+
+	character_modifier = {
+		name = holy_site_huy_effect_name
+		learning_per_piety_level = 1
+	}
+}
+
+vannes = {
+	county = c_vannes
+
+	character_modifier = {
+		name = holy_site_vannes_effect_name
+		monthly_county_control_change_factor = 0.05
+		monthly_piety_gain_mult = 0.1
+	}
+}
+
+macon = {
+	county = c_macon
+
+	character_modifier = {
+		name = holy_site_macon_effect_name
+		forest_advantage = 5
+	}
+	flag = macon_conversion_bonus # +20% County Conversion
+}

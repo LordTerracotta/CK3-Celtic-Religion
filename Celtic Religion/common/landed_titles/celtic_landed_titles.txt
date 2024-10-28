@@ -1,0 +1,5 @@
+﻿e_gaul = {
+	color = { 1 64 17 }
+
+	capital = c_ile_de_france
+}

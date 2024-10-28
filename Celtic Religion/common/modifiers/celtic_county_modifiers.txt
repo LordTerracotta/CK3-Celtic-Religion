@@ -1,0 +1,7 @@
+﻿reclaim_celtic_religion_modifier = {
+	icon = county_modifier_opinion_positive
+}
+
+reclaim_gaul_celtic_religion_modifier = {
+	icon = county_modifier_opinion_positive
+}

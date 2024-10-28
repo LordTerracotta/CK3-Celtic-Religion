@@ -1,0 +1,107 @@
+found_gaul_decision = {
+	picture = "gfx/interface/illustrations/decisions/fp1_decision_raise_runestone.dds"
+	major = yes
+
+	ai_check_interval = 120
+
+	desc = found_gaul_decision_desc
+	selection_tooltip = found_gaul_decision_tooltip
+
+	is_shown = {
+		#Standard filter checks.
+		is_landed = yes
+		exists = dynasty
+		highest_held_title_tier <= tier_kingdom
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_founded_gaul_empire
+			}
+		}
+		AND = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_goidelic }
+				culture = { has_cultural_pillar = heritage_brythonic }
+				religion = religion:celtic_religion
+				}
+			OR = {
+				has_title = title:k_france
+				has_title = title:k_brittany
+				has_title = title:k_frisia
+				has_title = title:k_lotharingia
+				}
+			}
+		}
+
+	is_valid = {
+		#Must be independent.
+		is_imprisoned = no
+		is_independent_ruler = yes
+		#Should have a decent prestige level.
+		prestige_level >= high_prestige_level
+		#Completely controls the core regions of their kingdoms.
+		completely_controls_region = custom_gaul
+		#Has ruled each kingdom for a very long time.
+		has_title = title:k_france
+			has_title = title:k_brittany
+			has_title = title:k_frisia
+			has_title = title:k_lotharingia
+		OR = {
+			culture = { has_cultural_pillar = heritage_goidelic }
+			culture = { has_cultural_pillar = heritage_brythonic }
+			religion = religion:celtic_religion
+			}
+		highest_held_title_tier < tier_empire
+	}
+
+	is_valid_showing_failures_only = {
+		is_alive = yes
+		not = { exists = involved_activity }
+		#Has to be around for the ceremony.
+		is_imprisoned = no
+		has_contagious_deadly_disease_trigger = no
+	}
+
+	effect = {
+		save_scope_as = founder
+		show_as_tooltip = { found_gaul_scripted_effect = yes }
+		trigger_event = { id = celtic_isles.3001}
+		#Notify other players.		
+		every_player = {
+			limit = {
+				any_held_title = { title_province = { geographical_region = world_europe_west } }
+				#Obviously, we exempt scope:founder themselves.
+				NOT = { this = scope:founder }
+			}
+			#Vassal players get a separate event.
+			if = {
+				limit = {
+					any_liege_or_above = { this = scope:founder }
+				}
+				trigger_event = celtic_isles.3002
+			}
+			#Everyone else within range gets a less personal version.
+			else = { trigger_event = celtic_isles.3001 }
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_found_gaul
+			}
+		}
+	}
+
+	cost = {
+		gold = 200
+		prestige = 1000
+		piety = 500
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
